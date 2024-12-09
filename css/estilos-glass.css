@@ -1,0 +1,199 @@
+
+
+#div3 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    padding: 50px;
+    display: none;
+  }
+  #bod {
+    background: linear-gradient(to right, #a44f6e, #335a94);
+    position: relative;
+  }
+  #barraNav{
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(1rem);
+  }
+  #glass{
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+  }
+#index{
+    z-index: 1;
+}
+#inde{
+  z-index: -1;
+}
+#burbuja{
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  animation: burbujas 0s linear infinite ;
+}
+
+#burbuja:nth-child(1){
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+#burbuja:nth-child(2){
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 5s;
+}
+
+#burbuja:nth-child(3){
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 7s;
+}
+
+#burbuja:nth-child(4){
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
+#burbuja:nth-child(5){
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+#burbuja:nth-child(6){
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+#burbuja:nth-child(7){
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 5s;
+}
+
+#burbuja:nth-child(8){
+  width: 100;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+
+#burbuja:nth-child(9){
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+#burbuja:nth-child(10){
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+  0%{
+      bottom: 0;
+      opacity: 0;
+  }
+  30%{
+      transform: translateX(30px);
+  }
+  50%{
+      opacity: .4;
+  }
+  100%{
+      bottom: 100%;
+      opacity: 0;
+  }
+}
+
+@keyframes movimiento{
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(30px);
+  }
+  100%{
+      transform: translateY(100vh);
+  }
+}
+#btn-flotante {
+	font-size: 26px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	color: #ffffff; /* Color del texto */
+	border-radius: 5px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	position: fixed;
+	bottom: 60%;
+	right: 1%;
+	transition: all 300ms ease 0ms;
+	z-index: 99;
+}
+#btn-flotante:hover {
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	#btn-flotante {
+		font-size: 16px;
+		bottom: 60%;
+    right: 1%;
+	}
+}
+#index > #item:hover{
+  /*Modifica lo que quieras*/
+  background:#198754;
+  color:white;
+}
+
+#index > #opcUsuAdm:hover{
+  /*Modifica lo que quieras*/
+  background:#198754;
+  color:white;
+}
+
+#index > .active{
+  /*Modifica lo que quieras*/
+  background:#198754;
+  color:white;
+}
+#comm:hover{
+  background: #d1cfcf;
+  border-radius: .3rem;
+}
